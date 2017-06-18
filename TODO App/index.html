@@ -11,21 +11,7 @@
 		<body>
 			<main>
 				<h1>TODO App!</h1>
-				<fieldset>
-					<div class="text-box">
-
-					</div>
-				</fieldset>
-				<fieldset>
-					<div class="radio-list">
-
-					</div>
-				</fieldset>
-				<fieldset>
-					<div class="difficulty-dropdown">
-
-					</div>
-				</fieldset>
+				<h2>Tasks that need finishing:</h2>
 				<aside class="main-chart">
 					<div id="chart">
 						<ul>
@@ -33,6 +19,34 @@
 						</ul>
 					</div>
 				</aside>
+
+				<fieldset>
+					<legend>Please describe the task you are wanting to accomplish:</legend>
+					<div class="text-box">
+						<form class="" action="index.html" method="post">
+							<!-- <p>Please enter description here:</p> -->
+							<textarea name="task-description" rows="8" cols="80"></textarea>
+						</form>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Please select the assignee:</legend>
+					<div class="assignee-radio-list">
+						<ul>
+							<label><li><input type="radio" name="assignee" value="johnny">Johnny</li></label>
+							<label><li><input type="radio" name="assignee" value="jane">Jane</li></label>
+							<label><li><input type="radio" name="assignee" value="jessi">Jessi</li></label>
+							<label><li><input type="radio" name="assignee" value="jeremy">Jeremy</li></label>
+						</ul>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Please select the difficulty of the task:</legend>
+					<div class="difficulty-dropdown">
+						<input type="dropdown" name="" value="">
+					</div>
+				</fieldset>
+				<input type="submit" name="submit" value="submit">
 			</main>
 		</body>
 	</div>
