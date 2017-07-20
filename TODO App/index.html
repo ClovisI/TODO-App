@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="/css/main.css">
 		<link rel="stylesheet" href="/css/position.css">
-		<link rel="text/javascript" href="/js/main.js">
+		<link rel="text/javascript" href="./js/main.js">
 	</head>
 	<div class="container">
 		<body>
@@ -33,11 +33,11 @@
 				</fieldset>
 				<fieldset>
 					<legend>Please select the assignee:</legend>
-					<div class="assignee-radio-list">
+					<div id="assignee-radio-list">
 						<ul>
-							<label><li><input type="radio" name="assignee" value="johnny">Johnny</li></label>
-							<label><li><input type="radio" name="assignee" value="jane">Jane</li></label>
-							<label><li><input type="radio" name="assignee" value="jessi">Jessi</li></label>
+							<label><li><input type="radio" class="help" name="assignee" value="johnny">Johnny</li></label>
+							<label><li><input type="radio" class="help" name="assignee" value="jane">Jane</li></label>
+							<label><li><input type="radio" id="ass" name="assignee" value="jessi">Jessi</li></label>
 							<label><li><input type="radio" name="assignee" value="jeremy">Jeremy</li></label>
 							<label><li><input type="radio" name="assignee" value="jackson">Jackson</li></label>
 							<label><li><input type="radio" name="assignee" value="johanna">Johanna</li></label>
@@ -63,9 +63,9 @@
 						</select>
 					</div>
 				</fieldset>
-				<input type="submit" name="submit" value="submit">
+				<input id="button" type="submit" value="Submit" onsubmit="addItem(); return false">
 			</main>
-			<script type="text/javascript" src="/js/main.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		</body>
 	</div>
